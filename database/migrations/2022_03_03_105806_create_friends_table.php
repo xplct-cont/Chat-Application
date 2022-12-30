@@ -19,8 +19,8 @@ class CreateFriendsTable extends Migration
             $table->unsignedBigInteger('friend');
             $table->timestamps();
 
-            $table->foreign('user')->references('id')->on('users')->onDelete('cascde');
-            $table->foreign('friend')->references('id')->on('users')->onDelete('cascde');
+            $table->foreign('user')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('friend')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
