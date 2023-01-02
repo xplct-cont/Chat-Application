@@ -1,8 +1,8 @@
 <div>
-    <div class="login-form">
+    <div class="login-form" style="margin-top: 200px;">
         <form wire:submit.prevent="login">
           <h1>Login</h1>
-          <div class="content">
+          <div class="content" >
             <div class="input-field">
               <input type="text" placeholder="Username" class="@error('username') is-invalid @enderror" autocomplete="nope" wire:model.defer="username">
               @error('username')
